@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">      
+</head>
+
+<body>
+    <main>
+        <form>
+            <h2>Registration</h2>
+            <fieldset class="main">
+                <legend><strong>INFORMATION</strong></legend>
+                <div>
+                    <label for="Fname">First Name</label>
+                    <input type="text" id="Fname" placeholder="Enter your first name">
+                </div>
+                <div>
+                    <label for="Uname">User Name</label>
+                    <input type="text" id="Uname" placeholder="Enter your user name">
+                </div>
+                <div>
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" placeholder="Enter your email">
+                </div>
+                <div>
+                    <label for="Pno">Phone No</label>
+                    <input type="number" id="Pno" placeholder="Enter your phone #">
+                </div>
+                <div>
+                    <label for="Pass">Password</label>
+                    <input type="password" id="Pass" required minlength="8" maxlength="128" placeholder="Enter password">
+                </div>
+                <div>
+                    <label for="Cpass">Confirm Password</label>
+                    <input type="password" id="Cpass" required minlength="8" maxlength="128" placeholder="Confirm password">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Gender</strong></legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="notprefer" name="gender" value="prefernot to say">
+                <label for="notprefer">Prefer Not to say</label>
+            </fieldset>
+            <fieldset>
+                <label for="soi">Choose Bank</label>
+                <select id="soi" name="soi">
+                    <option value=""> --Select Bank from Following-- </option>
+                    <option value="Meezan">Meezan Bank</option>
+                    <option value="Allied">Allied Bank</option>
+                    <option value="Islamic">Islamic Bank</option>
+                    <option value="JS">JS Bank</option>
+                    <option value="Habib">Habib Bank</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Upload Paid Challan</strong></legend>
+                <input type="file" id="myFile" name="filename">
+            </fieldset>
+            <div>
+                <button type="submit" value="Submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
